@@ -1,0 +1,26 @@
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 3vw;
+}
+.filter-input {
+  width: 16vw;
+  height: 2vw;
+  border: 0.19vw solid rgb(193, 190, 190);
+  border-radius: 0.8vw;
+  padding-left: 0.96vw;
+  font-size: 1.3vw;
+}
+.filter-btn {
+  width: 7vw;
+  height: 2.2vw;
+  border: 0.19vw solid #7a007a;
+  border-radius: 0.8vw;
+  background-color: #940494;
+  color: white;
+  overflow: hidden;
+  font-size: 1.2vw;
+  cursor:pointer;
+}
