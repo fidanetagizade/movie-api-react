@@ -3,19 +3,22 @@
   align-items: center;
   justify-content: center;
   gap: 2vw;
-  margin-top: 3vw;
+  margin-top:1.5vw;
+  margin-bottom:2vw;
+ 
 }
 .filter-input {
-  width: 16vw;
-  height: 2vw;
+  width: 20vw;
+  height: 2.5vw;
   border: 0.19vw solid rgb(193, 190, 190);
   border-radius: 0.8vw;
   padding-left: 0.96vw;
   font-size: 1.3vw;
+  
 }
 .filter-btn {
   width: 7vw;
-  height: 2.2vw;
+  height: 2.5vw;
   border: 0.19vw solid #7a007a;
   border-radius: 0.8vw;
   background-color: #940494;
@@ -23,4 +26,9 @@
   overflow: hidden;
   font-size: 1.2vw;
   cursor:pointer;
+}
+.disabled-btn {
+  background-color: #cccccc;
+  cursor: not-allowed ;
+  border: 1px solid #999;
 }

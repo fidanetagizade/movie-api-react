@@ -1,0 +1,15 @@
+.movies-container {
+  display: flex;
+  flex-direction: column ;
+  background-color: #ffffff; 
+  border: 0.1vw solid #c653a6; 
+  border-radius: 1.5vw;      
+  padding: 1vw;
+  width: 48%; 
+  margin: 1vw 0 1vw 2vw; 
+}
+
+.no-movies{
+
+    font-size:20px;
+}
