@@ -10,15 +10,8 @@ function Filter({ onSearch }) {
       onSearch(inputValue); 
     }
   };
-
   
   const isTooShort = inputValue.trim().length < 3;
-
-
-  
-
-
-
   return (
     <form onSubmit={handleSubmit} className="filter-container">
       <input

@@ -30,5 +30,5 @@
 .disabled-btn {
   background-color: #cccccc;
   cursor: not-allowed ;
-  border: 1px solid #999;
+  border: 0.1vw solid #999;
 }
