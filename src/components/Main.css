@@ -1,15 +1,31 @@
-.movies-container {
-  display: flex;
-  flex-direction: column ;
-  background-color: #ffffff; 
-  border: 0.1vw solid #c653a6; 
-  border-radius: 1.5vw;      
-  padding: 1vw;
-  width: 48%; 
-  margin: 1vw 0 1vw 2vw; 
+main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2vw;
 }
 
-.no-movies{
 
-    font-size:20px;
+.main-layout {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;    
+    width: 100%;
+    gap: 7vw;            
+    margin-top: 1vw;
+}
+
+.movies-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; 
+    border: 0.1vw solid #c653a6; 
+    border-radius: 1.5vw;      
+    padding: 1vw;
+    width: 50%;                  
+    box-sizing: border-box;
+}
+
+.no-movies {
+    font-size: 1.91vw;
+    font-family: 'Times New Roman', Times, serif;
 }
