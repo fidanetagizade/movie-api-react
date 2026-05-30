@@ -8,7 +8,7 @@ function Main({ favoriteMovies, onAddToFavorite, onRemoveFromFavorite, onCreateL
   const [movies, setMovies] = useState([]);
   const [searchQuery, setSearchQuery] = useState("harry potter");
 
-  const API_KEY = "29819e62";
+  const API_KEY = "260edcbd";
 
   useEffect(() => {
     if (!searchQuery.trim()) return;

@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
@@ -9,18 +9,15 @@ function App() {
   const [favoriteMovies, setFavoriteMovies] = useState([]);
   const [lists, setLists] = useState([]);
 
- 
   const handleAddToFavorite = (movie) => {
     if (!favoriteMovies.some((item) => item.imdbID === movie.imdbID)) {
       setFavoriteMovies([...favoriteMovies, movie]);
     }
   };
 
- 
   const handleRemoveFromFavorite = (imdbID) => {
     setFavoriteMovies(favoriteMovies.filter((item) => item.imdbID !== imdbID));
   };
-
 
   const handleCreateList = (title) => {
     if (favoriteMovies.length === 0) return;
@@ -37,7 +34,8 @@ function App() {
   };
 
   return (
-    <Router>
+    
+    <Router basename="/movie-api-react">
       <div className="app">
         <Header />
         <Routes>
