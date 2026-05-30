@@ -32,3 +32,28 @@
   cursor: not-allowed ;
   border: 0.1vw solid #999;
 }
+
+@media (max-width: 850px) {
+    .filter-container {
+        gap: 2vw;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    .filter-input {
+        width: 65vw;
+        height: 8vw;
+        font-size: 4vw;
+        border-radius: 1.5vw;
+        border-width: 0.3vw;
+        padding-left: 2vw;
+    }
+
+    .filter-btn {
+        width: 25vw;
+        height: 8vw;
+        font-size: 4vw;
+        border-radius: 1.5vw;
+        border-width: 0.3vw;
+    }
+}

@@ -109,3 +109,49 @@
 .look-btn.active:hover {
     background-color: #660066;
 }
+@media (max-width: 850px) {
+    .favorite-container {
+        width: 95%;
+        order: 1; 
+        min-height: auto;
+        padding: 4vw;
+        border-width: 0.3vw;
+        gap: 3vw;
+    }
+
+    .favorite-list {
+        max-height: 40vw; 
+        gap: 2vw;
+    }
+
+    .movie-title {
+        font-size: 4vw;
+    }
+
+    .remove-btn {
+        width: 6vw;
+        height: 6vw;
+        font-size: 3.5vw;
+    }
+
+    .favorite-controls {
+        gap: 3vw;
+    }
+
+    .favorite-input {
+        width: 100%;
+        height: 8vw;
+        font-size: 4vw;
+        margin-bottom: 1vw;
+        border-width: 0.3vw;
+        padding-left: 2vw;
+    }
+
+    .add-btn,
+    .look-btn {
+        width: 100%;
+        height: 8vw;
+        font-size: 3.5vw;
+        margin-bottom: 0;
+    }
+}
