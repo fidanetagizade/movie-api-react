@@ -1,4 +1,4 @@
-/* Əgər yoxdursa, ümumi konteyner strukturu */
+
 .lists-page-container {
     display: flex;
     flex-direction: column;
@@ -140,4 +140,56 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+@media (max-width: 850px) {
+    .lists-page-container {
+        width: 95%;
+        padding: 4vw;
+        border-width: 0.3vw;
+    }
+
+    .list-card-box {
+        flex-direction: column;
+        padding: 4vw;
+        gap: 4vw;
+        border-width: 0.3vw;
+    }
+
+    .list-card-box-text {
+        width: 100%;
+    }
+
+    .list-card-title {
+        font-size: 6vw;
+    }
+
+    .list-movie-name {
+        font-size: 4vw;
+    }
+
+    .imdb-btn {
+        font-size: 3.5vw;
+        padding: 1.5vw 4vw;
+        border-width: 0.3vw;
+    }
+
+    .delete-list-btn {
+        width: 10vw;
+        height: 10vw;
+        font-size: 5vw;
+        align-self: center;
+    }
+
+    .movies-back-btn {
+        font-size: 4.5vw;
+        padding: 2.5vw 8vw;
+        margin-top: 3vw;
+    }
+
+    .empty-list-notice {
+        font-size: 5vw;
+        text-align: center;
+        gap: 2vw;
+    }
 }
