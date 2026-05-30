@@ -1,8 +1,9 @@
+
 import "./Card.css"; 
-function Card({ movie }) {
-  // Şəkli yükləyə bilmədikdə işə düşəcək funksiya
+
+function Card({ movie, onAddToFavorite, isAdded }) {
   const handleImageError = (e) => {
-    e.target.src = "https://via.placeholder.com/300x450?text=No+Poster"; // Bura öz ağ və ya "no poster" şəklinin linkini qoy
+    e.target.src = "https://via.placeholder.com/300x450?text=No+Poster"; 
   };
 
   return (
@@ -11,14 +12,22 @@ function Card({ movie }) {
         src={movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/300x450?text=No+Poster"} 
         alt={movie.Title} 
         className="movie-img"
-        onError={handleImageError} // Əsas hissə bura: şəkil tapılmayanda funksiyanı çağır
+        onError={handleImageError} 
       />
       <div className="movie-info">
-        <h3 className="movie-title">{movie.Title}</h3>
+        <h3 className="movie-title-text">{movie.Title}</h3>
         <p className="movie-year"><strong>Year:</strong> {movie.Year}</p>
-        <button className="fav-btn">+ Favorite</button>
+        
+        <button 
+          className={`fav-btn ${isAdded ? "added" : ""}`}
+          onClick={() => !isAdded && onAddToFavorite(movie)}
+          disabled={isAdded}
+        >
+          {isAdded ? "Added" : "+ Favorite"}
+        </button>
       </div>
     </div>
   );
 }
+
 export default Card;
