@@ -1,16 +1,37 @@
-# React + Vite
+# Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based movie search application that lets you search for movies, view details, and build custom favorite lists — powered by the OMDb API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔍 **Search** — search for movies by title and instantly see results with poster, title, and release year
+- ➕ **Add to Favorites** — mark any movie as a favorite with one click
+- 📋 **Custom Favorite Lists** — create named lists (e.g. "abc"), add movies to them, and view them separately
+- ❌ **Remove from List** — remove a movie from a favorite list at any time
+- 🔗 **IMDB Link** — jump directly to a movie's IMDB page from the favorites view
+- 🎨 Custom UI with a purple/orange gradient theme
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Create React App)
+- OMDb API
+- CSS
 
-## Expanding the ESLint configuration
+## How to Run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/fidanetagizade/movie-api-react.git
+cd movie-api-react
+npm install
+```
+
+Create a `.env` file in the root directory and add your own OMDb API key:
+
+REACT_APP_API_KEY=your_api_key_here
+
+
+Then start the dev server:
+
+```bash
+npm run dev
+```
